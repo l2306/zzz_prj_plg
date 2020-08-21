@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="plg_1st.h" />
+    <ClInclude Include="..\plg\plg_itfc.h">
+      <Filter>plg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="plg_1st.cpp" />
+    <ClCompile Include="..\plg\plg_itfc.cpp">
+      <Filter>plg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="plg">
+      <UniqueIdentifier>{127edcd3-c8a8-4f01-b631-ca1e4fc48d87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

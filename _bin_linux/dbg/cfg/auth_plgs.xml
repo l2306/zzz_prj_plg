@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<document>
+	<plgs auth="36419e31c6a1ebfaf3b8a651f9bd52e4 " note="插件列表如下">
+		<plg auth="c9b0a96d59f8ab9b2baab2c5315a5b77 " path="plg/plg_0.so"></plg>
+		<plg auth="c076a1c050c721b6cef49247a2ecae2f" path="plg/plg_1st.so"></plg>
+		<plg auth="1ae90dbc17d5a7827ae619c6f5eb3599" path="plg/plg_2nd.so"></plg>
+	</plgs>
+</document>

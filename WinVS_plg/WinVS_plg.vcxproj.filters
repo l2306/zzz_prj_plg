@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="plugin">
+      <UniqueIdentifier>{53ad0de0-2999-4b5a-91d9-e58c3a9717df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{0f983f00-3faa-4fad-b419-d069d2e34ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\tinyxml2">
+      <UniqueIdentifier>{be9ea762-5c53-4b2c-913f-7e9159f1e8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\md5">
+      <UniqueIdentifier>{3e14a2d5-dc51-413e-9c3e-6e0078388be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0uitls">
+      <UniqueIdentifier>{af41a8cd-3b5f-43d0-863a-9cf45e95c78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plg">
+      <UniqueIdentifier>{1fc905f5-baf7-4890-9054-245add0da346}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\3rd\tinyXML2\tinyxml2.cpp">
+      <Filter>3rd\tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\md5\md5.cpp">
+      <Filter>3rd\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\plugin\plugin_load.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\plugin\plugin_msg.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0utils\_log.cpp">
+      <Filter>0uitls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\plg\plg_itfc.cpp">
+      <Filter>plg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\plg\plgs_load.cpp">
+      <Filter>plg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0utils\_tools.cpp">
+      <Filter>0uitls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3rd\tinyXML2\tinyxml2.h">
+      <Filter>3rd\tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\md5\md5.h">
+      <Filter>3rd\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\ref_ptr.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\plugin_itfc.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\plugin_load.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\plugin_msg.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\z_plugin_msg_ctrl.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\buffer.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\helperSTL.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\singleton.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\task_binder.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\ThreadPool.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\plugin_define.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plugin\z_plugin_load_ctrl.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\_log.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\_singleton.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\name_pipe.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plg\obj_vir.h">
+      <Filter>plg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plg\plg_itfc.h">
+      <Filter>plg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\plg\plgs_load.h">
+      <Filter>plg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\_tools.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\0utils\only_one_app.h">
+      <Filter>0uitls</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
