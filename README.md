@@ -17,5 +17,5 @@
     plugin_*        具体插件实现
 
 ## 注意：  window，linux中不同处
-    *win 特有的   .vcxproj .vcxproj.filters .sln .v12.suo            
-    *linux 则是   makefile mk.sh                                              
+    * win 特有的   .vcxproj .vcxproj.filters .sln .v12.suo            
+    * linux 则是   makefile mk.sh
