@@ -102,19 +102,17 @@ function _fun_make_patch_mod_cn()
 	echo -e  "${GREEN} mod ${RES}"
 
 	# [旧]=>[新]
-	mod_files=`diff -rq $1 $2 | grep "文件 " | sed 's/文件 //g' | sed 's/ 和 /\^\^\^\^/g' | sed 's/ 不同//g'`
+	mod_files=`diff -rq $1 $2 | grep "文件 " | sed 's/文件 //g' | sed 's/ 和 /\^\^/g' | sed 's/ 不同//g'`
 	for mod_path in $mod_files
 	do
-		echo "  $mod_path" && echo "    $mod_path" >> $tmp_log
-		new_path=${mod_path#*^^^^}		#去掉^^^^ 获得新的子路径
-		#echo $new_path
-		
+		new_path=${mod_path#*^^}     #去掉^^ 获得新的子路径
 		new_dir=${new_path%/*}       #获取所在目录
-       #echo $new_dir
+		new_mid=${new_dir#$2/}       #新的中间路径
+		mod_one=${new_path#*/}
+		echo "  $1^$2...$mod_one" && echo "    * $1^$2...$mod_one" >> $tmp_log
 		if [ $2 = $new_dir ]; then
 			cp $new_path  $3/  
 		else
-			new_mid=${new_dir#$2/}      #新的中间路径
 			mkdir -p $3/$new_mid;  cp $new_path $3/$new_mid 
 		fi
 	done
@@ -177,19 +175,17 @@ function _fun_make_patch_mod_en()
 	echo -e  "${GREEN} mod ${RES}"
 
 	# [旧]=>[新]
-	mod_files=`diff -rq $1 $2 | grep "Files" | sed 's/Files//g' | sed 's/ and /\^\^\^\^/g' | sed 's/ differ//g'`
+	mod_files=`diff -rq $1 $2 | grep "Files" | sed 's/Files//g' | sed 's/ and /\^\^/g' | sed 's/ differ//g'`
 	for mod_path in $mod_files
 	do
-		echo "  $mod_path" && echo "    $mod_path" >> $tmp_log
-		new_path=${mod_path#*^^^^}		#去掉^^^^ 获得新的子路径
-		#echo $new_path
-		
+		new_path=${mod_path#*^^}     #去掉^^ 获得新的子路径
 		new_dir=${new_path%/*}       #获取所在目录
-       #echo $new_dir
+		new_mid=${new_dir#$2/}       #新的中间路径
+		mod_one=${new_path#*/}
+		echo "  $1^$2...$mod_one" && echo "    * $1^$2...$mod_one" >> $tmp_log
 		if [ $2 = $new_dir ]; then
 			cp $new_path  $3/  
 		else
-			new_mid=${new_dir#$2/}      #新的中间路径
 			mkdir -p $3/$new_mid;  cp $new_path $3/$new_mid 
 		fi
 	done
@@ -210,7 +206,7 @@ function _patch_info_log()
 		mv _patch_.tgz $patch_name_tgz
 		md5sum_pack=`md5sum $patch_name_tgz | awk '{print $1}' `
 		sed -i "1i \ "  $tmp_log && vim  $tmp_log
-		sed -i "2c 增量最新版:   $patch_name_tgz"   x_patch_update.log
+		sed -i "2c 新增量:   $patch_name_tgz"   x_patch_update.log
 		sed -i "3c md5sum:   $md5sum_pack"  x_patch_update.log
 		sed -i "3a\----------------------"  x_patch_update.log
 		sed -i "4a\md5sum: $md5sum_pack _patch_: $patch_name_tgz"   x_patch_update.log

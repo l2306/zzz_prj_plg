@@ -1,9 +1,9 @@
 #---------详情
-增量最新版:   zzz_app__0.0.1_v_0.1.0__200821_143430.tgz
-md5sum:   3775d94fa27a2b1363774b6cc98e7224
+最新版:   zzz_app__0.0.1_v_0.1.0__201001_173953.tgz
+md5sum:   8bb6724679d4ec65c73ec9cf828be35b
 ----------------------
-md5sum: 3775d94fa27a2b1363774b6cc98e7224 _patch_: zzz_app__0.0.1_v_0.1.0__200821_143430.tgz
-     插件框架变更
+md5sum: 8bb6724679d4ec65c73ec9cf828be35b _patch_: zzz_app__0.0.1_v_0.1.0__201001_173953.tgz
+     升级脚本
      - 0.0.1/zzz_app.0.1
      - 0.0.1/plg/plugin_one.so.0.0.1
      - 0.0.1/plg/plugin_two.so.0.0.2
@@ -12,49 +12,11 @@ md5sum: 3775d94fa27a2b1363774b6cc98e7224 _patch_: zzz_app__0.0.1_v_0.1.0__200821
      + 0.1.0/plg/plg_0.so
      + 0.1.0/plg/plg_1st.so
      + 0.1.0/plg/plg_2nd.so
+     + 0.1.0/plg/plugin_one.so
      + 0.1.0/plg/plugin_one.so.1.0.1
+     + 0.1.0/plg/plugin_two.so
      + 0.1.0/plg/plugin_two.so.1.0.1
-     0.0.1/ver/x_apply_patch.log^^^^0.1.0/ver/x_apply_patch.log
-     0.0.1/x_plg.sh^^^^0.1.0/x_plg.sh
-----------------------
-md5sum: 321fd87efd0363ab11a375f0726e566b _patch_: zzz_app__0.0.1_v_0.1.0__200821_140035.tgz
-     更新
-     - 0.0.1/zzz_app.0.1
-     - 0.0.1/plg/plugin_one.so.0.0.1
-     - 0.0.1/plg/plugin_two.so.0.0.2
-     + 0.1.0/zzz_app
-     + 0.1.0/cfg/auth_plgs.xml
-     + 0.1.0/plg/plg_0.so
-     + 0.1.0/plg/plg_1st.so
-     + 0.1.0/plg/plg_2nd.so
-     + 0.1.0/plg/plugin_one.so.1.0.1
-     + 0.1.0/plg/plugin_two.so.1.0.1
-     0.0.1/ver/x_apply_patch.log^^^^0.1.0/ver/x_apply_patch.log
-----------------------
-md5sum: c0ffc05cdb411aca788f24f3815ca4ef _patch_: zzz_app__0.0.1_v_0.1.0__200821_133423.tgz
-     
-     - 0.0.1/zzz_app.0.1
-     - 0.0.1/plg/plugin_one.so.0.0.1
-     - 0.0.1/plg/plugin_two.so.0.0.2
-     + 0.1.0/zzz_app
-     + 0.1.0/cfg/auth_plgs.xml
-     + 0.1.0/plg/plg_0.so
-     + 0.1.0/plg/plg_1st.so
-     + 0.1.0/plg/plg_2nd.so
-     + 0.1.0/plg/plugin_one.so.1.0.1
-     + 0.1.0/plg/plugin_two.so.1.0.1
-----------------------
-md5sum: 31037095b9b887092de0fba348ac6afe _patch_: zzz_app__0.0.1_v_0.1.0__200821_133039.tgz
-     插件框架变更
-     - 0.0.1/zzz_app.0.1
-     - 0.0.1/plg/plugin_one.so.0.0.1
-     - 0.0.1/plg/plugin_two.so.0.0.2
-     + 0.1.0/zzz_app
-     + 0.1.0/cfg/auth_plgs.xml
-     + 0.1.0/plg/plg_0.so
-     + 0.1.0/plg/plg_1st.so
-     + 0.1.0/plg/plg_2nd.so
-     + 0.1.0/plg/plugin_one.so.1.0.1
-     + 0.1.0/plg/plugin_two.so.1.0.1
-     0.0.1/ver/x_apply_patch.log^^^^0.1.0/ver/x_apply_patch.log
+     * 0.0.1^0.1.0...log/ssss.log
+     * 0.0.1^0.1.0...ver/x_apply_patch.log
+     * 0.0.1^0.1.0...x_plg.sh
 ----------------------
