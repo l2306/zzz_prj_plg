@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ZZZ_APP=zzz_app
 VERSION=0.1.0
@@ -24,12 +24,12 @@ dir_need_build=(. plg_0 plg_1st plg_2nd plugin_one plugin_two)
 make_some()
 {
     mkdir -p ${TMP_OBJ_DIR}
-    if [ $SUB != 'all' ] ; then
-        echo " "
-        make $clean  -C $SUB
+    if [ $SUB != 'all' ] ; 
+    then
+        echo " "  &&  make $clean  -C $SUB
     else 
         for i in ${dir_need_build[@]}; do
-            echo " " && make $clean  -C $i
+            echo " "  &&   make $clean  -C $i
         done
     fi
 }
@@ -39,10 +39,10 @@ choose()
 case $# in
     0)   echo -e "${SHAN}     input:   all/centos/ubuntu            ${OVER}" && exit 1 ;;
     1)   echo -e "${SHAN}     input:   all/ ${dir_need_build[@]}    ${OVER}" && exit 1 ;;
-    2)   echo -e "${SHAN}     input:   d/r/dc/rc                    ${OVER}" && exit 1 ;;
+    2)   echo -e "${SHAN}     input:   d/r/dc/rc	            ${OVER}" && exit 1 ;;
     *)   echo "" ;;
 esac
-    export PLT=$1   &&  echo " 整体平台    $PLT "
+    export PLT=$1   &&  echo " 操作系统    $PLT "
     export SUB=$2   &&  echo " 构建子项    $SUB " 
     export D_R=$3   &&  echo "内测or发版   $D_R " 
 }

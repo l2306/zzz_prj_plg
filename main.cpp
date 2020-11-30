@@ -17,9 +17,9 @@ void test_PlgCtl();     //使用声明接口
 int main(){
 
 	LOG("log/ssss.log");
-	LOG_PRINTF("===>>>  begain ...%s ", __FILE__);
+	LOG_PRINTF("==>>  begain ...%s ", __FILE__);
 	LOG_FUN(LOG_LEVEL_ALERT,"11 %d ", 2222);
-	LOG_FILE(LOG_LEVEL_ALERT,"7890876543");
+	LOG_FILE(LOG_LEVEL_ALERT,"4567");
 	
 	//inst_exit_func();
 	//if (0 != already_running())
@@ -29,7 +29,7 @@ int main(){
 
     //test_MsgCtl();
 
-	LOG_PRINTF("<<<=== started %s ", __FILE__);
+	LOG_PRINTF("<<== started ... %s ", __FILE__);
 
 	while(1)
 		;
